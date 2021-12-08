@@ -18,9 +18,8 @@ class Post(models.Model):
         return self.title
 
 class Book(models.Model):
-    author = models.CharField(max_length=200)
     title = models.CharField(max_length=200)
-    summary = models.TextField
+    author = models.CharField(max_length=200)
     genre = models.CharField(max_length=200)
     publish_date = models.DateTimeField(blank=True, null=True)
 
